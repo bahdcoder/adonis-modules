@@ -57,6 +57,7 @@ class ModuleProvider extends ServiceProvider {
     // Definte function to register routes
     Helpers.registerAllModuleRoutes = (Route) => {
       const modules = Helpers.getAllModules()
+      console.log(Route)
       modules.forEach(module => {
         const routeFile = require(resolve(__dirname, '..', 'modules', module, 'routes.js'))
         routeFile(Route)

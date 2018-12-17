@@ -1,5 +1,10 @@
 'use strict'
 
-class ArticleController {}
+class ArticleController {
+  index ({ renderModuleView }) {
+
+    return renderModuleView('blog.articles')
+  }
+}
 
 module.exports = ArticleController

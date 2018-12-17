@@ -1,5 +1,9 @@
 'use strict'
 
-class RegisterController {}
+class RegisterController {
+  index () {
+    return 'THE REGISTER INDEX'
+  }
+}
 
 module.exports = RegisterController
